@@ -1,1 +1,1 @@
-alert("Super, mon très vieux Bert!");
+alert("Merci de votre visite, suivez nos modifications, A BIENTOT !");
