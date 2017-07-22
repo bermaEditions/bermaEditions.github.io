@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang = "fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Métronome_1</title>
+    <link rel = "stylesheet" href = "majordome_1.css">
+</head>
+<body>
+    <div id = "conteneurLabels" class = "conteneurs">
+        <button id = "boutonDemAr" class = "bouton" onclick = "demarArrete();">Démarrer</button>
+		<div id = "Tempo" class="labels" >Tempo</div>
+    </div>
+	
+	<div id = "conteneurSaisies" class = "conteneurs">
+			<input type="number" id="champTempo" class="saisieTempo" name="quantity" value = "120" min="20" max="300" step = "5" onchange="recupTempo();" />
+	</div>
+	
+	<canvas id="canvas"  width="500" height="400" style="background-color:#f5f5f5">
+		<p>Désolé, votre navigateur ne supporte pas Canvas.</p>
+	</canvas>
+	
+	<audio id = "metroClic">
+		<source src = "Bip_1000ms.mp3" type = "audio/mpeg">
+		<source src = "Bip_1000ms.ogg" type = "audio/ogg">
+		<source src = "Bip_1000ms.wav" type = "audio/wav">
+	</audio>
+
+	<audio id = "metroClicImpair">
+		<source src = "Bip_1000ms_Imp.mp3" type = "audio/mpeg">
+		<source src = "Bip_1000ms_Imp.ogg" type = "audio/ogg">
+		<source src = "Bip_1000ms_Imp.wav" type = "audio/wav">
+	</audio>
+    
+	<script src = "metrExecuteur_RAF.js"></script>
+</body>
+</html>
