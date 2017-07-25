@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang = "fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Métronome_1</title>
+    <link rel = "stylesheet" href = "majordome_1.css">
+</head>
+<body>
+    <div id = "conteneurLabels" class = "conteneurs">
+        <button id = "boutonDemAr" class = "bouton" onclick = "demarArrete();">Démarrer</button>
+    </div>
+	
+	<canvas id="canvas"  width="300" height="50" style="background-color:#f5f5f5">
+		<p>Désolé, votre navigateur ne supporte pas Canvas.</p>
+	</canvas>
+	
+	<audio id = "metroClic" controls>
+		<source src = "Bip_1000ms.mp3" type = "audio/mpeg">
+		<source src = "Bip_1000ms.ogg" type = "audio/ogg">
+	</audio> 
+    
+	<script src = "metrExecuteur_Tone170725.js"></script>
+</body>
+</html>
